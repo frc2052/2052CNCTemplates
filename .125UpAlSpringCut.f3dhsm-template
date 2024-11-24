@@ -253,7 +253,7 @@
     <parameter expression="false" name="useStockContours"/>
     <parameter expression="false" name="stockContours"/>
     <parameter expression="false" name="overrideToolView"/>
-    <parameter expression="'useWCS'" name="view_orientation_mode"/>
+    <parameter expression="'axesZX'" name="view_orientation_mode"/>
     <parameter expression="false" name="view_orientation_axisZ"/>
     <parameter expression="false" name="view_orientation_flipZ"/>
     <parameter expression="'wcs'" name="view_orientation_axesZX_unselected_default"/>

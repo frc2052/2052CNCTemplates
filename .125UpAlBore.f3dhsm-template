@@ -113,7 +113,7 @@
     <parameter expression="false" name="betaMode"/>
     <parameter expression="false" name="alphaMode"/>
     <parameter expression="false" name="isXpress"/>
-    <parameter expression="true" name="licenseMultiaxis"/>
+    <parameter expression="false" name="licenseMultiaxis"/>
     <parameter expression="true" name="license3D"/>
     <parameter expression="false" name="metric"/>
     <parameter expression="true" name="isAssemblyDocument"/>
@@ -255,7 +255,7 @@
     <parameter expression="5.1054" name="auto_holeTopDiameter"/>
     <parameter expression="true" name="auto_holeIsThrough"/>
     <parameter expression="false" name="overrideToolView"/>
-    <parameter expression="'useWCS'" name="view_orientation_mode"/>
+    <parameter expression="'axesZX'" name="view_orientation_mode"/>
     <parameter expression="false" name="view_orientation_axisZ"/>
     <parameter expression="false" name="view_orientation_flipZ"/>
     <parameter expression="'wcs'" name="view_orientation_axesZX_unselected_default"/>
