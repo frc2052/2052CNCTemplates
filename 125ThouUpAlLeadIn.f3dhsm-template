@@ -3,11 +3,13 @@
 
   <user-description></user-description>
 
+  <user-notes></user-notes>
+
   <iconID id="0"/>
 
   <template description="AlLeadin" strategy="contour2d" toolPresetId="{cf3547e7-f681-4bee-96ef-03c44402209b}" unit="inches" version="127">
-    <tool guid="fe7ba10e-df9b-4c35-a7ba-356c8ebff70a" tool-library-version="26" type="flat end mill" unit="inches" version="1.5">
-      <description>Upcut Flat Endmill </description>
+    <tool guid="fe7ba10e-df9b-4c35-a7ba-356c8ebff70a" tool-library-version="28" type="flat end mill" unit="inches" version="1.5">
+      <description>Upcut Flat Endmill</description>
       <manufacturer>Genmitsu</manufacturer>
       <product-id>X0022OW5CJ</product-id>
       <product-link>https://www.amazon.com/gp/product/B07P84YFS9</product-link>
@@ -21,10 +23,10 @@
         <expression parameterKey="tool_stepdown" value="0.013 in"/>
       </expressions>
       <nc break-control="0" diameter-offset="1" length-offset="1" live-tool="1" manual-tool-change="0" number="1" turret="0"/>
-      <coolant mode="flood"/>
+      <coolant mode="mist"/>
       <material name="carbide"/>
-      <body assembly-gauge-length="0.59999999999999998" body-length="0.6" coolant-support="no" diameter="0.125" flute-length="0.5" number-of-flutes="1" overall-length="1.5" shaft-diameter="0.125" shoulder-length="0.5" thread-pitch="0" thread-profile-angle="60"/>
-      <motion clockwise="yes" cutting-feedrate="60" entry-feedrate="60" exit-feedrate="60" feed-mode="per-minute" plunge-feedrate="18" ramp-feedrate="18" ramp-spindle-rpm="12000" retract-feedrate="0" spindle-rpm="12000" transition-feedrate="60"/>
+      <body assembly-gauge-length="0.59999999999999998" body-length="0.6" coolant-support="no" diameter="0.125" flute-length="0.5" number-of-flutes="1" overall-length="1.5" shaft-diameter="0.125" shoulder-diameter="0.125" shoulder-length="0.5" thread-pitch="0" thread-profile-angle="60"/>
+      <motion clockwise="yes" cutting-feedrate="80" entry-feedrate="80" exit-feedrate="80" feed-mode="per-minute" plunge-feedrate="48" ramp-feedrate="48" ramp-spindle-rpm="16000" retract-feedrate="0" spindle-rpm="16000" transition-feedrate="80"/>
       <presets>
         <preset description="SAMPLE preset for roughing in Aluminum" id="{af4d2479-9954-4f5b-b0de-5185c4d5ddd3}" name="PolyCarb">
           <parameter key="tool_coolant" value="mist"/>
@@ -47,13 +49,13 @@
           <parameter key="tool_coolant" value="flood"/>
           <parameter expression="14000rpm" key="tool_spindleSpeed" value="14000"/>
           <parameter key="tool_rampSpindleSpeed" value="14000"/>
-          <parameter key="tool_feedCutting" value="2844.7999999999997"/>
+          <parameter key="tool_feedCutting" value="2844.7999999999993"/>
           <parameter expression="0.008in" key="tool_feedPerTooth"/>
-          <parameter key="tool_feedEntry" value="2844.7999999999997"/>
-          <parameter key="tool_feedExit" value="2844.7999999999997"/>
-          <parameter key="tool_feedPlunge" value="711.19999999999993"/>
-          <parameter key="tool_feedTransition" value="2844.7999999999997"/>
-          <parameter expression="tool_feedPlunge" key="tool_feedRamp" value="711.19999999999993"/>
+          <parameter key="tool_feedEntry" value="2844.7999999999993"/>
+          <parameter key="tool_feedExit" value="2844.7999999999993"/>
+          <parameter key="tool_feedPlunge" value="711.19999999999982"/>
+          <parameter key="tool_feedTransition" value="2844.7999999999993"/>
+          <parameter expression="tool_feedPlunge" key="tool_feedRamp" value="711.19999999999982"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter expression="0.002 in" key="tool_feedPerRevolution"/>
