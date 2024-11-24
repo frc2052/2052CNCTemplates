@@ -3,10 +3,12 @@
 
   <user-description></user-description>
 
+  <user-notes></user-notes>
+
   <iconID id="8"/>
 
   <template description="Face1" strategy="face" toolPresetId="{94194d5a-88c6-404c-aa3f-92b5a0822d18}" unit="inches" version="120">
-    <tool guid="27cdd658-5a13-4a6e-97a5-a34c722ac7ec" tool-library-version="26" type="flat end mill" unit="inches" version="1.5">
+    <tool guid="27cdd658-5a13-4a6e-97a5-a34c722ac7ec" tool-library-version="28" type="flat end mill" unit="inches" version="1.5">
       <description>1/4" Upcut Flat Endmill</description>
       <manufacturer>Yonico</manufacturer>
       <product-id>31014-SC</product-id>
@@ -23,7 +25,7 @@
       <nc break-control="0" diameter-offset="3" length-offset="3" live-tool="1" manual-tool-change="0" number="3" turret="0"/>
       <coolant mode="flood"/>
       <material name="carbide"/>
-      <body assembly-gauge-length="3.444" body-length="0.97" coolant-support="no" diameter="0.25" flute-length="0.8" number-of-flutes="1" overall-length="2" shaft-diameter="0.25" shoulder-length="0.96" thread-pitch="0" thread-profile-angle="60"/>
+      <body assembly-gauge-length="3.444" body-length="0.97" coolant-support="no" diameter="0.25" flute-length="0.8" number-of-flutes="1" overall-length="2" shaft-diameter="0.25" shoulder-diameter="0.25" shoulder-length="0.96" thread-pitch="0" thread-profile-angle="60"/>
       <holder description="Maritool CAT40-ER32-2.35" gauge-length="2.474" product-id="CAT40-ER32-2.35" vendor="Maritool">
         <section diameter="1.5" length="0"/>
         <section diameter="1.97" length="0.148"/>
@@ -54,9 +56,9 @@
           <parameter expression="0.006 in" key="tool_feedPerTooth"/>
           <parameter key="tool_feedEntry" value="2438.3999999999996"/>
           <parameter key="tool_feedExit" value="2438.3999999999996"/>
-          <parameter key="tool_feedPlunge" value="1625.5999999999997"/>
+          <parameter key="tool_feedPlunge" value="1625.5999999999995"/>
           <parameter key="tool_feedTransition" value="2438.3999999999996"/>
-          <parameter expression="tool_feedPlunge" key="tool_feedRamp" value="1625.5999999999997"/>
+          <parameter expression="tool_feedPlunge" key="tool_feedRamp" value="1625.5999999999995"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter expression=".004 in" key="tool_feedPerRevolution"/>
@@ -103,18 +105,18 @@
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="1.5351288659793836"/>
-          <parameter key="tool_stepover" value="6.3499999999999988"/>
+          <parameter key="tool_stepover" value="6.3499999999999979"/>
         </preset>
         <preset description="SAMPLE preset for finishing in Aluminum" id="{024f8455-8e03-4d9d-921f-20bee721b432}" name="Aluminum - Finishing">
           <parameter key="tool_coolant" value="flood"/>
           <parameter key="tool_spindleSpeed" value="11999.116128394204"/>
           <parameter key="tool_rampSpindleSpeed" value="11999.116128394204"/>
-          <parameter key="tool_feedCutting" value="3192.1520781268973"/>
-          <parameter key="tool_feedEntry" value="3192.1520781268973"/>
-          <parameter key="tool_feedExit" value="3192.1520781268973"/>
+          <parameter key="tool_feedCutting" value="3192.1520781268969"/>
+          <parameter key="tool_feedEntry" value="3192.1520781268969"/>
+          <parameter key="tool_feedExit" value="3192.1520781268969"/>
           <parameter key="tool_feedPlunge" value="1064.0506927089657"/>
-          <parameter key="tool_feedTransition" value="3192.1520781268973"/>
-          <parameter key="tool_feedRamp" value="3192.3872164948461"/>
+          <parameter key="tool_feedTransition" value="3192.1520781268969"/>
+          <parameter key="tool_feedRamp" value="3192.3872164948457"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="14.2875"/>
@@ -133,7 +135,7 @@
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="1.5351288659793836"/>
-          <parameter key="tool_stepover" value="6.3499999999999988"/>
+          <parameter key="tool_stepover" value="6.3499999999999979"/>
         </preset>
         <preset description="SAMPLE preset for roughing in Brass" id="{a98fc5dc-f309-4de3-91ab-5bbcacbaf1fa}" name="Brass - Roughing">
           <parameter key="tool_coolant" value="flood"/>
@@ -159,7 +161,7 @@
           <parameter key="tool_feedExit" value="1625.269329469761"/>
           <parameter key="tool_feedPlunge" value="541.75644315658724"/>
           <parameter key="tool_feedTransition" value="1625.269329469761"/>
-          <parameter key="tool_feedRamp" value="1625.3890490721647"/>
+          <parameter key="tool_feedRamp" value="1625.3890490721644"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="14.2875"/>
@@ -172,13 +174,13 @@
           <parameter key="tool_feedCutting" value="578.73439106202056"/>
           <parameter key="tool_feedEntry" value="578.73439106202056"/>
           <parameter key="tool_feedExit" value="578.73439106202056"/>
-          <parameter key="tool_feedPlunge" value="192.91146368734022"/>
+          <parameter key="tool_feedPlunge" value="192.91146368734019"/>
           <parameter key="tool_feedTransition" value="578.73439106202056"/>
           <parameter key="tool_feedRamp" value="578.77702144329862"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="1.5351288659793836"/>
-          <parameter key="tool_stepover" value="6.3499999999999988"/>
+          <parameter key="tool_stepover" value="6.3499999999999979"/>
         </preset>
         <preset description="SAMPLE preset for roughing in Copper" id="{59957f78-12f6-4201-b336-0772a09d15fb}" name="Copper - Roughing">
           <parameter key="tool_coolant" value="flood"/>
@@ -187,7 +189,7 @@
           <parameter key="tool_feedCutting" value="578.73439106202056"/>
           <parameter key="tool_feedEntry" value="578.73439106202056"/>
           <parameter key="tool_feedExit" value="578.73439106202056"/>
-          <parameter key="tool_feedPlunge" value="192.91146368734022"/>
+          <parameter key="tool_feedPlunge" value="192.91146368734019"/>
           <parameter key="tool_feedTransition" value="578.73439106202056"/>
           <parameter key="tool_feedRamp" value="578.77702144329862"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
@@ -204,7 +206,7 @@
           <parameter key="tool_feedExit" value="731.37119826139235"/>
           <parameter key="tool_feedPlunge" value="243.79039942046407"/>
           <parameter key="tool_feedTransition" value="731.37119826139235"/>
-          <parameter key="tool_feedRamp" value="731.425072082474"/>
+          <parameter key="tool_feedRamp" value="731.42507208247389"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="14.2875"/>
@@ -223,7 +225,7 @@
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="1.5351288659793836"/>
-          <parameter key="tool_stepover" value="6.3499999999999988"/>
+          <parameter key="tool_stepover" value="6.3499999999999979"/>
         </preset>
         <preset description="SAMPLE preset for roughing in Low Carbon Steel" id="{8cf88f18-d8dd-46c7-8eb2-94a20af5db5d}" name="Low Carbon Steel - Roughing">
           <parameter key="tool_coolant" value="flood"/>
@@ -264,11 +266,11 @@
           <parameter key="tool_feedExit" value="202.38750043216237"/>
           <parameter key="tool_feedPlunge" value="67.462500144054133"/>
           <parameter key="tool_feedTransition" value="202.38750043216237"/>
-          <parameter key="tool_feedRamp" value="202.40240857731956"/>
+          <parameter key="tool_feedRamp" value="202.40240857731953"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="1.5351288659793836"/>
-          <parameter key="tool_stepover" value="6.3499999999999988"/>
+          <parameter key="tool_stepover" value="6.3499999999999979"/>
         </preset>
         <preset description="SAMPLE preset for roughing in High Carbon Steel" id="{02d40534-fe5f-4a3e-88d9-9fb94afdf030}" name="High Carbon Steel - Roughing">
           <parameter key="tool_coolant" value="flood"/>
@@ -279,7 +281,7 @@
           <parameter key="tool_feedExit" value="182.00711994741502"/>
           <parameter key="tool_feedPlunge" value="60.669039982471631"/>
           <parameter key="tool_feedTransition" value="182.00711994741502"/>
-          <parameter key="tool_feedRamp" value="182.02052684536079"/>
+          <parameter key="tool_feedRamp" value="182.02052684536076"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="14.2875"/>
@@ -292,7 +294,7 @@
           <parameter key="tool_feedCutting" value="232.92206341991121"/>
           <parameter key="tool_feedEntry" value="232.92206341991121"/>
           <parameter key="tool_feedExit" value="232.92206341991121"/>
-          <parameter key="tool_feedPlunge" value="77.640687806637075"/>
+          <parameter key="tool_feedPlunge" value="77.640687806637061"/>
           <parameter key="tool_feedTransition" value="232.92206341991121"/>
           <parameter key="tool_feedRamp" value="232.93922078350522"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
@@ -304,26 +306,26 @@
           <parameter key="tool_coolant" value="flood"/>
           <parameter key="tool_spindleSpeed" value="11459.155902616463"/>
           <parameter key="tool_rampSpindleSpeed" value="11459.155902616463"/>
-          <parameter key="tool_feedCutting" value="2421.5204727902237"/>
-          <parameter key="tool_feedEntry" value="2421.5204727902237"/>
-          <parameter key="tool_feedExit" value="2421.5204727902237"/>
+          <parameter key="tool_feedCutting" value="2421.5204727902233"/>
+          <parameter key="tool_feedEntry" value="2421.5204727902233"/>
+          <parameter key="tool_feedExit" value="2421.5204727902233"/>
           <parameter key="tool_feedPlunge" value="807.17349093007465"/>
-          <parameter key="tool_feedTransition" value="2421.5204727902237"/>
+          <parameter key="tool_feedTransition" value="2421.5204727902233"/>
           <parameter key="tool_feedRamp" value="2421.6988453608242"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="1.7315206185567136"/>
-          <parameter key="tool_stepover" value="6.3499999999999988"/>
+          <parameter key="tool_stepover" value="6.3499999999999979"/>
         </preset>
         <preset description="SAMPLE preset for roughing in Plastics" id="{612e8833-63ab-4f44-8db3-e97f0f0052c2}" name="Plastics - Roughing">
           <parameter key="tool_coolant" value="flood"/>
           <parameter key="tool_spindleSpeed" value="11459.155902616463"/>
           <parameter key="tool_rampSpindleSpeed" value="11459.155902616463"/>
-          <parameter key="tool_feedCutting" value="2421.5204727902237"/>
-          <parameter key="tool_feedEntry" value="2421.5204727902237"/>
-          <parameter key="tool_feedExit" value="2421.5204727902237"/>
+          <parameter key="tool_feedCutting" value="2421.5204727902233"/>
+          <parameter key="tool_feedEntry" value="2421.5204727902233"/>
+          <parameter key="tool_feedExit" value="2421.5204727902233"/>
           <parameter key="tool_feedPlunge" value="807.17349093007465"/>
-          <parameter key="tool_feedTransition" value="2421.5204727902237"/>
+          <parameter key="tool_feedTransition" value="2421.5204727902233"/>
           <parameter key="tool_feedRamp" value="2421.6988453608242"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
@@ -354,11 +356,11 @@
           <parameter key="tool_feedExit" value="202.38750043216237"/>
           <parameter key="tool_feedPlunge" value="67.462500144054133"/>
           <parameter key="tool_feedTransition" value="202.38750043216237"/>
-          <parameter key="tool_feedRamp" value="202.40240857731956"/>
+          <parameter key="tool_feedRamp" value="202.40240857731953"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
-          <parameter key="tool_stepdown" value="2.2224999999999993"/>
-          <parameter key="tool_stepover" value="6.3499999999999988"/>
+          <parameter key="tool_stepdown" value="2.2224999999999988"/>
+          <parameter key="tool_stepover" value="6.3499999999999979"/>
         </preset>
         <preset description="SAMPLE preset for roughing in Stainless Steel" id="{591fd768-10a6-42c8-bf7e-02692d29915b}" name="Stainless Steel - Roughing">
           <parameter key="tool_coolant" value="flood"/>
@@ -369,7 +371,7 @@
           <parameter key="tool_feedExit" value="182.00711994741502"/>
           <parameter key="tool_feedPlunge" value="60.669039982471631"/>
           <parameter key="tool_feedTransition" value="182.00711994741502"/>
-          <parameter key="tool_feedRamp" value="182.02052684536079"/>
+          <parameter key="tool_feedRamp" value="182.02052684536076"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="14.2875"/>
@@ -382,7 +384,7 @@
           <parameter key="tool_feedCutting" value="232.92206341991121"/>
           <parameter key="tool_feedEntry" value="232.92206341991121"/>
           <parameter key="tool_feedExit" value="232.92206341991121"/>
-          <parameter key="tool_feedPlunge" value="77.640687806637075"/>
+          <parameter key="tool_feedPlunge" value="77.640687806637061"/>
           <parameter key="tool_feedTransition" value="232.92206341991121"/>
           <parameter key="tool_feedRamp" value="232.93922078350522"/>
           <parameter key="tool_presetMaterialCategory" value="all"/>
@@ -403,7 +405,7 @@
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter key="tool_stepdown" value="1.5351288659793836"/>
-          <parameter key="tool_stepover" value="6.3499999999999988"/>
+          <parameter key="tool_stepover" value="6.3499999999999979"/>
         </preset>
         <preset description="SAMPLE preset for roughing in Titanium" id="{7f381ccd-1a1f-4210-869d-7bee7850eeff}" name="Titanium - Roughing">
           <parameter key="tool_coolant" value="flood"/>

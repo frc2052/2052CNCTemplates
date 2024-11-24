@@ -3,17 +3,19 @@
 
   <user-description></user-description>
 
-  <iconID id="-1090237086"/>
+  <user-notes></user-notes>
+
+  <iconID id="0"/>
 
   <template description="Face2" strategy="face" unit="inches" version="120">
-    <tool guid="fe7ba10e-df9b-4c35-a7ba-356c8ebff70a" tool-library-version="26" type="flat end mill" unit="inches" version="1.5">
+    <tool guid="fe7ba10e-df9b-4c35-a7ba-356c8ebff70a" tool-library-version="28" type="flat end mill" unit="inches" version="1.5">
       <description>1/8" Upcut Flat Endmill</description>
       <manufacturer>Genmitsu</manufacturer>
       <product-id>X0022OW5CJ</product-id>
       <nc break-control="0" diameter-offset="1" length-offset="1" live-tool="1" manual-tool-change="0" number="1" turret="0"/>
       <coolant mode="flood"/>
       <material name="carbide"/>
-      <body assembly-gauge-length="3.074" body-length="0.6" coolant-support="no" diameter="0.125" flute-length="0.5" number-of-flutes="1" overall-length="1.5" shaft-diameter="0.125" shoulder-length="0.5" thread-pitch="0" thread-profile-angle="60"/>
+      <body assembly-gauge-length="3.0739999999999994" body-length="0.6" coolant-support="no" diameter="0.125" flute-length="0.5" number-of-flutes="1" overall-length="1.5" shaft-diameter="0.125" shoulder-diameter="0.125" shoulder-length="0.5" thread-pitch="0" thread-profile-angle="60"/>
       <holder description="Maritool CAT40-ER32-2.35" gauge-length="2.474" product-id="CAT40-ER32-2.35" vendor="Maritool">
         <section diameter="1.5" length="0"/>
         <section diameter="1.97" length="0.148"/>
@@ -34,7 +36,7 @@
         <section diameter="1.75" length="0"/>
         <section diameter="1.75" length="0.125"/>
       </holder>
-      <motion clockwise="yes" cutting-feedrate="50.1922" entry-feedrate="50.1922" exit-feedrate="50.1922" feed-mode="per-minute" plunge-feedrate="16.7307" ramp-feedrate="50.1959" ramp-spindle-rpm="11999.1" retract-feedrate="0" spindle-rpm="11999.1" transition-feedrate="50.1922"/>
+      <motion clockwise="yes" cutting-feedrate="39.3701" entry-feedrate="39.3701" exit-feedrate="39.3701" feed-mode="per-minute" plunge-feedrate="13.1234" ramp-feedrate="13.1234" ramp-spindle-rpm="5000" retract-feedrate="0" spindle-rpm="5000" transition-feedrate="39.3701"/>
       <presets>
         <preset description="SAMPLE preset for slotting in Aluminum" id="{99de341e-ff05-4baa-ab08-14c61fa509c8}" name="Default preset">
           <parameter key="tool_coolant" value="flood"/>
