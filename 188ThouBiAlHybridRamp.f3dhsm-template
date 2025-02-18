@@ -7,7 +7,7 @@
 
   <iconID id="4"/>
 
-  <template description="HybridRamp" strategy="contour2d" toolPresetId="{b74e8cf6-717b-48f8-85e2-1647a4c1ce42}" unit="inches" version="144">
+  <template description="HybridRamp (2)" strategy="contour2d" toolPresetId="{b74e8cf6-717b-48f8-85e2-1647a4c1ce42}" unit="inches" version="144">
     <tool guid="8342b2fb-bd5c-4ddf-ad97-0f50e801941c" tool-library-version="28" type="flat end mill" unit="inches" version="1.5">
       <description>3/16" 2FL REG</description>
       <manufacturer>OnlineCarbide</manufacturer>
@@ -52,8 +52,8 @@
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter expression=".0005 in" key="tool_feedPerRevolution"/>
-          <parameter expression=".035 in" key="tool_stepdown"/>
-          <parameter expression="(3/48) in" key="tool_stepover"/>
+          <parameter expression=".035 in" key="tool_stepdown" value="0"/>
+          <parameter expression="(3/48) in" key="tool_stepover" value="0"/>
         </preset>
         <preset description="" id="{b74e8cf6-717b-48f8-85e2-1647a4c1ce42}" name="AlCut">
           <parameter expression="'disabled'" key="tool_coolant" value="disabled"/>
@@ -69,8 +69,8 @@
           <parameter key="tool_presetMaterialCategory" value="all"/>
           <parameter key="tool_presetMaterialQuery" value=""/>
           <parameter expression=".0005 in" key="tool_feedPerRevolution"/>
-          <parameter expression=".035 in" key="tool_stepdown"/>
-          <parameter expression="(3/48) in" key="tool_stepover"/>
+          <parameter expression=".035 in" key="tool_stepdown" value="0"/>
+          <parameter expression="(3/48) in" key="tool_stepover" value="0"/>
         </preset>
       </presets>
     </tool>
@@ -117,7 +117,7 @@
     <parameter expression="'211875'" name="tool_productId"/>
     <parameter expression="'https://onlinecarbide.com/3-16-2fl-reg/'" name="tool_productLink"/>
     <parameter expression="0.186in" name="tool_diameter"/>
-    <parameter expression="0.186in" name="tool_tipDiameter"/>
+    <parameter expression="0.0in" name="tool_tipDiameter"/>
     <parameter expression="0.0in" name="tool_tipOffset"/>
     <parameter expression="0.0in" name="tool_cornerRadius"/>
     <parameter expression="tool_taperAngle * 2" name="tool_inclusiveAngle"/>
@@ -175,18 +175,18 @@
     <parameter expression="tool_feedPlunge" name="tool_feedRetract"/>
     <parameter expression="true" name="tool_clockwise"/>
     <parameter expression="'none'" name="featureOperationId"/>
-    <parameter expression="11.43" name="surfaceZHigh"/>
-    <parameter expression="1.27" name="surfaceZLow"/>
-    <parameter expression="1.26999999999999" name="surfaceXLow"/>
-    <parameter expression="115.56999999999999" name="surfaceXHigh"/>
-    <parameter expression="0.127" name="surfaceYLow"/>
-    <parameter expression="152.52699999999999" name="surfaceYHigh"/>
-    <parameter expression="12.7" name="stockZHigh"/>
+    <parameter expression="3.04800000000009" name="surfaceZHigh"/>
+    <parameter expression="0.0" name="surfaceZLow"/>
+    <parameter expression="19.05" name="surfaceXLow"/>
+    <parameter expression="269.77005579437133" name="surfaceXHigh"/>
+    <parameter expression="19.05000000000001" name="surfaceYLow"/>
+    <parameter expression="633.81974541319335" name="surfaceYHigh"/>
+    <parameter expression="3.04800000000009" name="stockZHigh"/>
     <parameter expression="0.0" name="stockZLow"/>
     <parameter expression="0.0" name="stockXLow"/>
-    <parameter expression="116.83999999999999" name="stockXHigh"/>
+    <parameter expression="269.77005579437133" name="stockXHigh"/>
     <parameter expression="0.0" name="stockYLow"/>
-    <parameter expression="152.654" name="stockYHigh"/>
+    <parameter expression="633.81974541319335" name="stockYHigh"/>
     <parameter expression="false" name="tab_5axis"/>
     <parameter expression="true" name="machiningTypeGroup"/>
     <parameter expression="'three_axis'" name="multiAxisMachiningType"/>
@@ -230,32 +230,7 @@
     <parameter expression="0deg" name="polarLineAngle"/>
     <parameter expression="false" name="tab_geometry"/>
     <parameter expression="true" name="group_geometry"/>
-    <parameter expression="true" name="contours">
-      <CadContours2D name="cadobject">
-        <CadCurveChain>
-          <Parameters>
-            <Parameter expression="false" name="ignoreGeoReverse"/>
-            <Parameter expression="'closed'" name="chain_mode"/>
-            <Parameter expression="'tangent'" name="extensionMethod"/>
-            <Parameter expression="'distance'" name="extensionKind"/>
-            <Parameter expression="0 in" name="extension0Length"/>
-            <Parameter expression="extension0Length" name="extension1Length"/>
-            <Parameter expression="false" name="reverse"/>
-          </Parameters>
-        </CadCurveChain>
-        <CadCurveChain>
-          <Parameters>
-            <Parameter expression="false" name="ignoreGeoReverse"/>
-            <Parameter expression="'closed'" name="chain_mode"/>
-            <Parameter expression="'tangent'" name="extensionMethod"/>
-            <Parameter expression="'distance'" name="extensionKind"/>
-            <Parameter expression="0 in" name="extension0Length"/>
-            <Parameter expression="extension0Length" name="extension1Length"/>
-            <Parameter expression="false" name="reverse"/>
-          </Parameters>
-        </CadCurveChain>
-      </CadContours2D>
-    </parameter>
+    <parameter expression="false" name="contours"/>
     <parameter expression="false" name="group_tabs"/>
     <parameter expression="'rectangular'" name="tabShape"/>
     <parameter expression="tool_diameter" name="tabWidth"/>
@@ -287,7 +262,7 @@
     <parameter expression="true" name="clearanceHeight_checkFixtureTop"/>
     <parameter expression="true" name="clearanceHeight_checkFixtureBottom"/>
     <parameter expression="0.4in" name="clearanceHeight_offset"/>
-    <parameter expression="27.94" name="clearanceHeight_value"/>
+    <parameter expression="19.55800000000009" name="clearanceHeight_value"/>
     <parameter expression="true" name="clearanceHeight_absolute"/>
     <parameter expression="true" name="retractHeight_group"/>
     <parameter expression="'from highest of'" name="retractHeight_mode"/>
@@ -298,8 +273,8 @@
     <parameter expression="true" name="retractHeight_checkModelBottom"/>
     <parameter expression="true" name="retractHeight_checkFixtureTop"/>
     <parameter expression="true" name="retractHeight_checkFixtureBottom"/>
-    <parameter expression="0.2in" name="retractHeight_offset"/>
-    <parameter expression="17.78" name="retractHeight_value"/>
+    <parameter expression="0.25 in" name="retractHeight_offset"/>
+    <parameter expression="9.39800000000009" name="retractHeight_value"/>
     <parameter expression="true" name="retractHeight_absolute"/>
     <parameter expression="true" name="feedHeight_group"/>
     <parameter expression="'from top'" name="feedHeight_mode"/>
@@ -311,7 +286,7 @@
     <parameter expression="false" name="feedHeight_checkFixtureTop"/>
     <parameter expression="false" name="feedHeight_checkFixtureBottom"/>
     <parameter expression="0.2in" name="feedHeight_offset"/>
-    <parameter expression="16.7132" name="feedHeight_value"/>
+    <parameter expression="8.33120000000009" name="feedHeight_value"/>
     <parameter expression="(feedHeight_mode == 'disabled') ? false : true" name="useZFeed"/>
     <parameter expression="true" name="feedHeight_absolute"/>
     <parameter expression="true" name="topHeight_group"/>
@@ -324,7 +299,7 @@
     <parameter expression="false" name="topHeight_checkFixtureTop"/>
     <parameter expression="false" name="topHeight_checkFixtureBottom"/>
     <parameter expression="0.008 in" name="topHeight_offset"/>
-    <parameter expression="11.6332" name="topHeight_value"/>
+    <parameter expression="3.25120000000009" name="topHeight_value"/>
     <parameter expression="true" name="topHeight_absolute"/>
     <parameter expression="true" name="bottomHeight_group"/>
     <parameter expression="'from contour'" name="bottomHeight_mode"/>
@@ -335,8 +310,8 @@
     <parameter expression="true" name="bottomHeight_checkModelBottom"/>
     <parameter expression="false" name="bottomHeight_checkFixtureTop"/>
     <parameter expression="false" name="bottomHeight_checkFixtureBottom"/>
-    <parameter expression="-.005 in" name="bottomHeight_offset"/>
-    <parameter expression="-0.127" name="bottomHeight_value"/>
+    <parameter expression="-0.0025 in" name="bottomHeight_offset"/>
+    <parameter expression="-0.0635" name="bottomHeight_value"/>
     <parameter expression="false" name="bottomHeight_absolute"/>
     <parameter expression="false" name="tab_passes"/>
     <parameter expression="true" name="group_passes"/>
@@ -353,12 +328,12 @@
     <parameter expression="false" name="makeSharpCorners"/>
     <parameter expression="0.0" name="minimumCuttingRadius"/>
     <parameter expression="0in" name="finishingSmoothingDeviation"/>
-    <parameter expression="false" name="doMultipleFinishingPasses"/>
+    <parameter expression="true" name="doMultipleFinishingPasses"/>
     <parameter expression="2" name="numberOfFinishingStepovers"/>
     <parameter expression="tool_diameter * 0.1" name="finishingStepover"/>
     <parameter expression="compensationType != 'computer'" name="leadsForAllFinishingPasses"/>
     <parameter expression="tool_feedCutting" name="finishFeedrate"/>
-    <parameter expression="true" name="nullPass"/>
+    <parameter expression="false" name="nullPass"/>
     <parameter expression="0in" name="finishingOverlap"/>
     <parameter expression="0in" name="leadEndDistance"/>
     <parameter expression="'roll'" name="cornerMode"/>
@@ -378,7 +353,7 @@
     <parameter expression="1" name="maximumRoughingSteps"/>
     <parameter expression="0.25*finishingStepover" name="minimumFinishingStepover"/>
     <parameter expression="true" name="doMultipleDepths"/>
-    <parameter expression=" .03in" name="maximumStepdown"/>
+    <parameter expression="0.025 in" name="maximumStepdown"/>
     <parameter expression="0" name="numberOfFinishingStepdowns"/>
     <parameter expression="0.008in" name="finishingStepdown"/>
     <parameter expression="tool_taperAngle" name="slopeAngle"/>
@@ -429,7 +404,7 @@
     <parameter expression="entry_radius" name="entry_verticalRadius"/>
     <parameter expression="entry_radius" name="leadInRadius"/>
     <parameter expression="entry_verticalRadius" name="leadInVerticalRadius"/>
-    <parameter expression="true" name="doLeadOut"/>
+    <parameter expression="false" name="doLeadOut"/>
     <parameter expression="true" name="exit_sameAsEntry"/>
     <parameter expression="tool_diameter * 0.1" name="exit_radius"/>
     <parameter expression="90.0deg" name="exit_sweep"/>

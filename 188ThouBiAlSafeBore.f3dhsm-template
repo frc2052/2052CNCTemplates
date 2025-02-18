@@ -7,7 +7,7 @@
 
   <iconID id="4"/>
 
-  <template description="SafeBore" strategy="bore" toolPresetId="{b74e8cf6-717b-48f8-85e2-1647a4c1ce42}" unit="inches" version="144">
+  <template description="SafeBore" strategy="bore" unit="inches" version="144">
     <tool guid="8342b2fb-bd5c-4ddf-ad97-0f50e801941c" tool-library-version="28" type="flat end mill" unit="inches" version="1.5">
       <description>3/16" 2FL REG</description>
       <manufacturer>OnlineCarbide</manufacturer>
@@ -36,7 +36,7 @@
       <coolant mode="disabled"/>
       <material name="carbide"/>
       <body assembly-gauge-length="0.99999999999999989" body-length="1" coolant-support="no" diameter="0.186" flute-length="0.63" number-of-flutes="2" overall-length="2.008" shaft-diameter="0.186" shoulder-diameter="0.186" shoulder-length="1" thread-pitch="0" thread-profile-angle="60"/>
-      <motion clockwise="yes" cutting-feedrate="82.8" entry-feedrate="82.8" exit-feedrate="82.8" feed-mode="per-minute" plunge-feedrate="11.5" ramp-feedrate="41.4" ramp-spindle-rpm="23000" retract-feedrate="0" spindle-rpm="23000" transition-feedrate="82.8"/>
+      <motion clockwise="yes" cutting-feedrate="82.8" entry-feedrate="82.8" exit-feedrate="82.8" feed-mode="per-minute" plunge-feedrate="11.5" ramp-feedrate="30" ramp-spindle-rpm="23000" retract-feedrate="0" spindle-rpm="23000" transition-feedrate="82.8"/>
       <presets>
         <preset description="" id="{e6d9ff82-c9a4-4b4d-bb7a-c8e374a1bc3e}" name="AlBore">
           <parameter expression="'disabled'" key="tool_coolant" value="disabled"/>
@@ -117,7 +117,7 @@
     <parameter expression="'211875'" name="tool_productId"/>
     <parameter expression="'https://onlinecarbide.com/3-16-2fl-reg/'" name="tool_productLink"/>
     <parameter expression="0.186in" name="tool_diameter"/>
-    <parameter expression="0.186in" name="tool_tipDiameter"/>
+    <parameter expression="0.0in" name="tool_tipDiameter"/>
     <parameter expression="0.0in" name="tool_tipOffset"/>
     <parameter expression="0.0in" name="tool_cornerRadius"/>
     <parameter expression="tool_taperAngle * 2" name="tool_inclusiveAngle"/>
@@ -169,24 +169,24 @@
     <parameter expression="tool_type == 'probe' || tool_isDepositing ? 40inpm:tool_feedCutting" name="tool_feedEntry"/>
     <parameter expression="tool_isDepositing ? 40inpm : tool_feedCutting" name="tool_feedExit"/>
     <parameter expression="tool_feedCutting" name="tool_feedTransition"/>
-    <parameter expression="41.4in/min" name="tool_feedRamp"/>
+    <parameter expression="30in/min" name="tool_feedRamp"/>
     <parameter expression="11.5in/min" name="tool_feedPlunge"/>
     <parameter expression="tool_spindleSpeed > 0 ? tool_feedPlunge/tool_spindleSpeed : 0.0" name="tool_feedPerRevolution"/>
     <parameter expression="tool_feedPlunge" name="tool_feedRetract"/>
     <parameter expression="true" name="tool_clockwise"/>
     <parameter expression="'none'" name="featureOperationId"/>
-    <parameter expression="11.43" name="surfaceZHigh"/>
-    <parameter expression="1.27" name="surfaceZLow"/>
-    <parameter expression="1.26999999999999" name="surfaceXLow"/>
-    <parameter expression="115.56999999999999" name="surfaceXHigh"/>
-    <parameter expression="0.127" name="surfaceYLow"/>
-    <parameter expression="152.52699999999999" name="surfaceYHigh"/>
-    <parameter expression="12.7" name="stockZHigh"/>
+    <parameter expression="2.54" name="surfaceZHigh"/>
+    <parameter expression="0.0" name="surfaceZLow"/>
+    <parameter expression="14.82604377240509" name="surfaceXLow"/>
+    <parameter expression="112.17395622759491" name="surfaceXHigh"/>
+    <parameter expression="19.05000000000001" name="surfaceYLow"/>
+    <parameter expression="346.99681290918602" name="surfaceYHigh"/>
+    <parameter expression="2.54" name="stockZHigh"/>
     <parameter expression="0.0" name="stockZLow"/>
     <parameter expression="0.0" name="stockXLow"/>
-    <parameter expression="116.83999999999999" name="stockXHigh"/>
+    <parameter expression="127." name="stockXHigh"/>
     <parameter expression="0.0" name="stockYLow"/>
-    <parameter expression="152.654" name="stockYHigh"/>
+    <parameter expression="406.39999999999998" name="stockYHigh"/>
     <parameter expression="unavailable" name="auto_threadAngle"/>
     <parameter expression="unavailable" name="auto_threadPitch"/>
     <parameter expression="unavailable" name="auto_threadMinorDiameter"/>
@@ -259,7 +259,7 @@
     <parameter expression="false" name="reverseOrder"/>
     <parameter expression="0" name="numberOfHoles"/>
     <parameter expression="tool_diameter * 1e-5" name="compareTolerance"/>
-    <parameter expression="unavailable" name="auto_holeTopDiameter"/>
+    <parameter expression="5.1054" name="auto_holeTopDiameter"/>
     <parameter expression="true" name="auto_holeIsThrough"/>
     <parameter expression="false" name="overrideModel"/>
     <parameter expression="false" name="holeModel"/>
@@ -276,7 +276,7 @@
     <parameter expression="true" name="clearanceHeight_checkFixtureTop"/>
     <parameter expression="true" name="clearanceHeight_checkFixtureBottom"/>
     <parameter expression="0.4in" name="clearanceHeight_offset"/>
-    <parameter expression="27.94" name="clearanceHeight_value"/>
+    <parameter expression="17.78" name="clearanceHeight_value"/>
     <parameter expression="clearanceHeight_value" name="zClearance"/>
     <parameter expression="clearanceHeight_value" name="relativeZClearance"/>
     <parameter expression="true" name="clearanceHeight_absolute"/>
@@ -290,7 +290,7 @@
     <parameter expression="true" name="retractHeight_checkFixtureTop"/>
     <parameter expression="true" name="retractHeight_checkFixtureBottom"/>
     <parameter expression="0.2in" name="retractHeight_offset"/>
-    <parameter expression="17.78" name="retractHeight_value"/>
+    <parameter expression="7.62" name="retractHeight_value"/>
     <parameter expression="retractHeight_value" name="zRetract"/>
     <parameter expression="retractHeight_value" name="relativeZRetract"/>
     <parameter expression="true" name="retractHeight_absolute"/>
@@ -304,7 +304,7 @@
     <parameter expression="false" name="topHeight_checkFixtureTop"/>
     <parameter expression="false" name="topHeight_checkFixtureBottom"/>
     <parameter expression="0.008 in" name="topHeight_offset"/>
-    <parameter expression="11.6332" name="topHeight_value"/>
+    <parameter expression="2.7432" name="topHeight_value"/>
     <parameter expression="true" name="topHeight_absolute"/>
     <parameter expression="true" name="bottomHeight_group"/>
     <parameter expression="'from hole bottom'" name="bottomHeight_mode"/>
@@ -328,7 +328,7 @@
     <parameter expression="calculationTolerance" name="gougingTolerance"/>
     <parameter expression="true" name="useAngle"/>
     <parameter expression="1" name="threadPitch"/>
-    <parameter expression="3 deg" name="plungeAngle"/>
+    <parameter expression="1 deg" name="plungeAngle"/>
     <parameter expression="'computer'" name="compensationType"/>
     <parameter expression="'computer'" name="compensationTypeProxy"/>
     <parameter expression="false" name="doMultiplePasses"/>
